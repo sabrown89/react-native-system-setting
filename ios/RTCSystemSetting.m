@@ -60,7 +60,7 @@
 -(void)initVolumeView{
     skipSetVolumeCount = 0;
     volumeView = [[MPVolumeView alloc] initWithFrame:CGRectMake(-[UIScreen mainScreen].bounds.size.width, 0, 0, 0)];
-    [self showVolumeUI:YES];
+    [self showVolumeUI:NO];
     for (UIView* view in volumeView.subviews) {
         if ([view.class.description isEqualToString:@"MPVolumeSlider"]){
             volumeSlider = (UISlider*)view;
